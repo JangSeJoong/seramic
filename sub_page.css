@@ -1,0 +1,506 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'KyoboHandwriting2020A';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/KyoboHandwriting2020A.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+   scroll-behavior: smooth;
+}
+ul, ol {
+    list-style-type: none;
+}
+a {
+    color: black; 
+    text-decoration: none;
+}
+
+/* header 영역 */
+header {
+    /* border: 1px solid; */
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header>* {
+    /* border: 1px solid greenyellow; */
+}
+
+.logo img {
+    /* border: 1px solid red; */
+    display: block;
+    width: calc(100% - 100px);
+
+}
+.gnb > * {
+    font-family: 'Pretendard-Regular';
+}
+
+.gnb {
+    /* border: 1px solid red; */
+    width: calc(100% - 48px);
+    max-width: 600px;
+}
+.gnb a {
+    /* border: 1px solid; */
+    display: block;
+    text-align: center;
+}
+
+.gnb .dep1 {
+    display: flex;
+}
+
+.gnb .dep1 li {
+    position: relative;
+    flex: 1;
+}
+
+.gnb>ul>li>a {
+    padding: 10px;
+}
+.gnb>ul>li:hover {
+    background-color: lightgrey;
+}
+.dep2 {
+    position: absolute;
+    width: 100%;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+
+.gnb .dep2 li a {
+    /* border: 1px solid green; */
+    padding: 10px 0;
+    color: white;
+}
+.gnb>ul>li:hover .dep2 {
+    display: block;
+}
+
+.gnb .dep2 li:hover {
+    background-color: linen;
+}
+
+header p i{
+    padding: 5px;
+    font-size: 1.5em;
+    opacity: 0.5;
+}
+
+/* sec1 */
+.sec1 {
+    /* border: 1px solid red; */
+    margin: auto;
+    height: 434px;
+    background-image: url(./img/메인페이지-라인아트-최종본.png);
+    background-repeat: no-repeat;
+    background-position-x: 112%;
+    background-position-y: 30%;
+    background-size: 20%;
+}
+.sec1_1 {
+    /* border: 1px solid red; */
+    max-width: 1200px;
+    margin: auto;
+    height: 434px;
+}
+.inner1 {
+    background-image: url(./img/이미지\ 18.png);
+    background-size: cover;
+    background-position-y: 50%;
+    height: 270px;
+    position: relative;
+}
+.inner1_1 {
+    /* border: 1px solid red; */
+    display: inline-block;
+    position: absolute;
+    right: 100px; bottom: 50px;
+}
+.inner1_1 p {
+    font-family: 'KyoboHandwriting2020A';
+    font-size: 2em;
+    color:  white;
+    text-align: right;
+}
+.inner2 {
+    /* border: 1px solid blue; */
+    height: 165px
+}
+.inner2_1 {
+    /* border: 1px solid yellow; */
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner2_1 p {
+    font-family: 'KyoboHandwriting2020A';
+    font-size: 40px;
+    color: #98B88C;
+}
+.inner2_2 {
+    margin: auto;
+    height: 55px; width: 300px;
+    /* border: 1px solid #98B88C; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.inner2_2 p a {
+    font-family: 'Pretendard-Regular';
+}
+.inner2_2 p {
+    /* border: 1px solid #98B88C; */
+    padding: 6px 10px;
+    border-radius: 20px;
+}
+.inner2_2 p:nth-of-type(1) {
+    background-color: #98B88C;
+}
+/* sec2 */
+.sec2 {
+    height: 455px;
+    position: relative;
+}
+.sec2::after {
+    /* border: 1px solid red; */
+    content: "";
+    background: url(./img/메인페이지-라인아트1.png);
+    background-size: 100%;
+    position: absolute;
+    left: -15%; bottom: -50%;
+    width: 500px; height: 500px;
+    z-index: -10;
+    opacity: 0.3;
+}
+.sec2_in {
+    /* border: 1px solid red; */
+    max-width: 1200px;
+    margin: auto;
+    height: 100%;
+    padding-top: 100px;
+}
+.sec2_in1 {
+    /* border: 1px solid blue; */
+    display: flex;
+    height: 100%;
+}
+.sec2 * {
+    font-family: 'KyoboHandwriting2020A';
+}
+.sec2_in1_1 {
+    /* border: 1px solid lightgray; */
+    width: 10%; height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.sec2_in1_1 p {
+    color: white;
+}
+.sec2_in1_1 p::after{
+    content: url(./img/항아리\ 실루엣2.png);
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -10;
+
+}
+.sec2_in1_2 {
+    /* border: 1px solid lightpink; */
+    width: 55%; height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.sec2_in1_3 {
+    /* border: 1px solid lightseagreen; */
+    width: 35%; height: 100%;
+    padding: 0 10px;
+}
+
+.sec2_in1_3 p:nth-of-type(1) {
+    padding-bottom: 10px;
+    font-size: 20px;
+    color: #98B88C;
+}
+
+.sec2_in1_3 p:nth-of-type(2) {
+    font-family: 'Pretendard-Regular';
+}
+
+/* sed3 */
+.sec3 {
+    height: 455px;
+    position: relative;
+}
+.sec3::after {
+    content: "";
+    background: url(./img/메인페이지-라인아트1.png);
+    background-size: 100%;
+    position: absolute;
+    right: -15%; bottom: -90%;
+    width: 800px; height: 800px;
+    z-index: -10;
+    opacity: 0.3;
+}
+.sec3_in {
+    /* border: 1px solid red; */
+    max-width: 1200px;
+    margin: auto;
+    height: 100%;
+    padding-top: 100px;
+}
+.sec3_in1 {
+    /* border: 1px solid blue; */
+    display: flex;
+    height: 100%;
+}
+.sec3 * {
+    font-family: 'KyoboHandwriting2020A';
+}
+.sec3_in1_1 {
+    /* border: 1px solid lightgray; */
+    width: 10%; height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.sec3_in1_1 p {
+    color: white;
+}
+.sec3_in1_1 p::after{
+    content: url(./img/항아리\ 실루엣2.png);
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -10;
+
+}
+.sec3_in1_2 {
+    /* border: 1px solid lightpink; */
+    width: 55%; height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.sec3_in1_3 {
+    /* border: 1px solid lightseagreen; */
+    width: 35%; height: 100%;
+    padding: 0 10px;
+}
+
+.sec3_in1_3 p:nth-of-type(1) {
+    padding-bottom: 10px;
+    font-size: 20px;
+    color: #98B88C;
+}
+
+.sec3_in1_3 p:nth-of-type(2) {
+    font-family: 'Pretendard-Regular';
+}
+/* sec4 */
+.sec4 {
+    height: 455px;
+}
+.sec4_in {
+    /* border: 1px solid red; */
+    max-width: 1200px;
+    margin: auto;
+    height: 100%;
+    padding-top: 100px;
+}
+.sec4_in1 {
+    /* border: 1px solid blue; */
+    display: flex;
+    height: 100%;
+}
+.sec4 * {
+    font-family: 'KyoboHandwriting2020A';
+}
+.sec4_in1_1 {
+    /* border: 1px solid lightgray; */
+    width: 10%; height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.sec4_in1_1 p {
+    color: white;
+}
+.sec4_in1_1 p::after{
+    content: url(./img/항아리\ 실루엣2.png);
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -10;
+
+}
+.sec4_in1_2 {
+    /* border: 1px solid lightpink; */
+    width: 55%; height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.sec4_in1_3 {
+    /* border: 1px solid lightseagreen; */
+    width: 35%; height: 100%;
+    padding: 0 10px;
+}
+
+.sec4_in1_3 p:nth-of-type(1) {
+    padding-bottom: 10px;
+    font-size: 20px;
+    color: #98B88C;
+}
+
+.sec4_in1_3 p:nth-of-type(2) {
+    font-family: 'Pretendard-Regular';
+}
+/* sec5 */
+.sec5 {
+    height: 555px;
+    position: relative;
+}
+.sec5::after {
+    content: "";
+    background: url(./img/배경3.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0; bottom: -14%;
+    width: 400px; height: 200px;
+    z-index: -10;
+    opacity: 0.3;
+}
+.sec5_in {
+    /* border: 1px solid red; */
+    max-width: 1200px;
+    margin: auto;
+    height: 100%;
+    padding: 100px 0;
+}
+.sec5_in1 {
+    /* border: 1px solid blue; */
+    display: flex;
+    height: 100%;
+}
+.sec5 * {
+    font-family: 'KyoboHandwriting2020A';
+}
+.sec5_in1_1 {
+    /* border: 1px solid lightgray; */
+    width: 10%; height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.sec5_in1_1 p {
+    color: white;
+}
+.sec5_in1_1 p::after{
+    content: url(./img/항아리\ 실루엣2.png);
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -10;
+
+}
+.sec5_in1_2 {
+    /* border: 1px solid lightpink; */
+    width: 55%; height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.sec5_in1_3 {
+    /* border: 1px solid lightseagreen; */
+    width: 35%; height: 100%;
+    padding: 0 10px;
+}
+
+.sec5_in1_3 p:nth-of-type(1) {
+    padding-bottom: 10px;
+    font-size: 20px;
+    color: #98B88C;
+}
+
+.sec5_in1_3 p:nth-of-type(2) {
+    font-family: 'Pretendard-Regular';
+}
+
+/* footer 영역 */
+.foorer > * {
+    font-family: 'Pretendard-Regular';
+}
+.foot {
+    background-color: #D4D4D4;
+    width: 100%;height: 260px;
+    background-image: url(./img/한국전통문의\ 라인아트.png);
+    background-repeat: repeat-x;
+    background-position-y: 112%;
+}
+.foot_inner {
+    max-width: 1200px;
+    margin: auto;
+}
+.foot_gnb {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.foot_gnb h4 {
+    color: white;
+}
+.sns {
+    width: 136px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    font-size: 1.5em;
+    color: white;
+}
+.foot_in2 li {
+    /* border: 1px solid red; */
+    display: flex;
+    padding: 20px 0;
+    color: white;
+}
+.foot_in2 li p:nth-of-type(1) {
+    flex: 2;
+}
+
+.foot_in2 li p:nth-of-type(2) {
+    flex: 1;
+}
+.foot_in2 li p:nth-of-type(3) {
+    flex: 1;
+}
+
+.copy {
+    padding: 10px 0;
+}
+
+.copy p {
+    color: white;
+}
